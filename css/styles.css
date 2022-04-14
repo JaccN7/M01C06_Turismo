@@ -11329,3 +11329,7 @@ textarea.form-control-lg {
   font-weight: bold;
   font-size: 2.5%;
 }
+
+.marginForm{
+  margin-bottom: 2%;
+}
