@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Turismo - Lugares Inquietantes</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fijada">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html">Turismo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#ancla1">Bosque Aokigahara</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#ancla2">Bosque de Hoia Baciu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ancla3"><i class="bi bi-arrow-up"></i></a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#!">Services</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5" id="ancla3">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder text-white mb-2">Turismo</h1>
+                        <p class="lead text-white-50 mb-4">Lugares Inquietantes del mundo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5" id="ancla1">
+            <div class="row gx-5">
+
+                <!-- Card (Tarjeta) con descripción del lugar -->
+                <div class="card">
+                    <div class="fichaDescrip">
+
+                        <h4><b>Bosque de los Suicidios - Aokigahara</b></h4>
+
+                        <div class="centrar"><img src="images/Aokigahara.jpg" alt="Avatar" class="fichaImg"></div>
+
+                        <p class="justificar">El bosque Aokigahara creció sobre la lava arrojada por el monte Fuji
+                            durante su última gran erupción, en el siglo IX. Este frondoso y exuberante bosque se
+                            extiende a lo largo de 30 kilómetros cuadrados. El poroso lecho de roca de lava absorbe el
+                            sonido y refuerza la sensación de aislamiento que se siente al caminar por este territorio
+                            indómito.</p>
+                        <p class="justificar">En el Japón feudal del siglo XIX, cuando las hambrunas y las epidemias
+                            azotaban a la población, las familias más pobres abandonaban a su suerte a los niños y a los
+                            ancianos que no podían alimentar. Por este motivo, surgieron historias que afirmaban que el
+                            bosque estaba encantado por los fantasmas de los que allí murieron. Su fama como lugar de
+                            suicidio quizá se deba a que en 1960 se publicó la novela Nami no Tou, de Seicho Matsumoto,
+                            en la que al final de la obra dos amantes se suicidan en el bosque. Además, en 1993 se
+                            publicó El completo manual del suicidio, de Wataru Tsurumi, una guía para suicidarse donde
+                            recomienda este bosque como un lugar idóneo para quitarse la vida.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+
+                    <!-- Formulario Opiniones -->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Nombre-->
+                        <div class="mb-3">
+                            <label for="name">Nombre</label>
+                            <input class="form-control" id="nombreUsuario" type="text"
+                                placeholder="Ingresa tu Nombre..." data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input class="form-control" id="emailUsuario" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un email.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">El email no es válido</div>
+                        </div>
+                        <!-- Solicitar información -->
+                        <div class="mb-3">
+                            <label for="message">Solicitar información</label>
+                            <textarea class="form-control" id="solicitarInformacion" type="text"
+                                placeholder="Detalle que información desea obtener" style="height: 7rem"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere que complete
+                                este campo.</div>
+                        </div>
+                        <!-- Envio Correcto-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">¡Envío exitoso!</div>
+                            </div>
+                        </div>
+                        <!-- No se pudo enviar-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error en el envío</div>
+                        </div>
+                        <!-- Boton enviar-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                type="submit">Enviar</button></div>
+                    </form>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.174817470045!2d138.63831271521033!3d35.47521828024282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601be721e912db77%3A0xed043493c8ad92e1!2sAokigahara!5e0!3m2!1ses-419!2scl!4v1649912696341!5m2!1ses-419!2scl"
+                        width="95%" height="95%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="centrar"></iframe>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="h4 fw-bolder">Cómo llegar</h2><br />
+                    <p>Al bosque se puede llegar en tren y taxi o coche.</p><br />
+                    <p> Toma la línea Chuo hasta Takao y haz transbordo a la línea principal Chuo. En Otsuki, haz
+                        transbordo a la línea Fujikyuko y bájate en la estación de Kawaguchiko. Desde allí, tardarás de
+                        30 a 40 minutos en coche, dependiendo del tráfico.</p>
+                    <a class="text-decoration-none" href="https://www.japan.travel/es/spot/1335/">
+                        Japan Travel
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container px-5 my-5" id="ancla2">
+            <div class="row gx-5">
+
+                <!-- Card (Tarjeta) con descripción del lugar -->
+                <div class="card">
+                    <div class="fichaDescrip">
+
+                        <h4><b>El misterioso triángulo de las Bermudas de Transilvania - El bosque Hoia-Baciu</b></h4>
+
+                        <div class="centrar"><img src="images/hoia-baciu.jpg" alt="Avatar" class="fichaImg"></div>
+
+                        <p class="justificar">Hoia-Baciu es un bosque que tiene una superficie de aproximadamente 3
+                            kilómetros cuadrados. Su frontera sur comienza con una cresta que se extiende de este a
+                            oeste y su extremo oriental está bordeado por el Taietura Turcului, un valle que divide la
+                            colina norte de la sur.</p>
+                        <p class="justificar">Según la misma “mitología” de los lugareños nos encontramos con un espacio
+                            natural donde se produciría el fenómeno del tiempo perdido. Lo que cuentan es que muchos de
+                            los que han accedido al bosque por un espacio relativamente corto de tiempo han perdido la
+                            noción del mismo, saliendo horas o incluso días después.</p>
+
+                        <p class="justificar">El mismo nombre que se le ha dado, el “triángulo de las Bermudas de
+                            Transilvania”, se remonta al pasado, un momento en la historia donde un pastor y su rebaño
+                            de 200 ovejas se adentraron en el bosque y desaparecieron sin dejar rastro. Desde ese
+                            momento
+                            Hoia-Baciu tuvo un segundo nombre.</p>
+
+                        <p class="justificar">Más tarde llegarían las primera leyendas que hablaban de un bosque
+                            “envenenado”. Se decía y aún se sigue contando que han sido muchos los que han salido del
+                            bosque con los mismos patrones y estados: ansiedad, náuseas, dolores de cabeza o lo más
+                            inexplicable para los habitantes de la zona, la gente salía con pequeñas heridas en forma de
+                            ligeras quemaduras, pequeñas ampollas o erupciones cutáneas.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+
+                    <!-- Formulario Opiniones -->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Nombre-->
+                        <div class="mb-3">
+                            <label for="name">Nombre</label>
+                            <input class="form-control" id="nombreUsuario" type="text"
+                                placeholder="Ingresa tu Nombre..." data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input class="form-control" id="emailUsuario" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un email.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">El email no es válido</div>
+                        </div>
+                        <!-- Solicitar información -->
+                        <div class="mb-3">
+                            <label for="message">Solicitar información</label>
+                            <textarea class="form-control" id="solicitarInformacion" type="text"
+                                placeholder="Detalle que información desea obtener" style="height: 7rem"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere que complete
+                                este campo.</div>
+                        </div>
+                        <!-- Envio Correcto-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">¡Envío exitoso!</div>
+                            </div>
+                        </div>
+                        <!-- No se pudo enviar-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error en el envío</div>
+                        </div>
+                        <!-- Boton enviar-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                type="submit">Enviar</button></div>
+                    </form>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45002.002502701784!2d23.519135291968027!3d46.773662274887904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490f0099e46ca1%3A0x4d4b2f4e56f76c0!2sHoia%20Forest!5e0!3m2!1ses-419!2scl!4v1649948653875!5m2!1ses-419!2scl"
+                        width="95%" height="95%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="centrar"></iframe>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="h4 fw-bolder">Tour</h2>
+                    <p class="justificar">Imagínese, de noche, caminando con un extraño a través del Bosque Hoia-Baciu,
+                        uno de los bosques más famosos de Rumanía...</p>
+                    <p class="justificar"> Pero este extraño es un guía turístico profesional, que ha estado vagando por
+                        el bosque desde 2005. Conoce la mayoría de las historias, todos los lugares interesantes y
+                        también puede darte la mayoría de las explicaciones sobre algunos de los hechos extraños
+                        relacionados con este bosque.</p>
+                    <p class="justificar">No se supone que la gira sea aterradora o paranormal. Es una gira de
+                        presentación. Pero parte de la presentación es también una lista de las cosas inexplicables que
+                        pasaron o siguen pasando aquí.</p>
+                    <a class="text-decoration-none"
+                        href="https://www.tripadvisor.cl/AttractionProductReview-g298474-d23684722-Night_Tour_in_Hoia_Baciu_Forest-Cluj_Napoca_Cluj_County_Northwest_Romania_Transylv.html">
+                        Tour Nocturno
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <a href="http://plataforma5.iicap.cl/login/index.php" class="linkfooter">
+                <p class="m-0 text-center text-white">Bootcamp 2022 - Turismo</p>
+            </a>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
